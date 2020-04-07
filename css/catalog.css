@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap');
+body{
+    background : url(../111.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0%;
+
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    float: right;
+    padding: 0 20px;
+
+}
+nav ul li{
+    list-style: none;
+
+}
+nav ul li a{
+    font-size: 17px;
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 39px;
+
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background: rgb(255, 255, 255);
+    color: #000;
+    border: 1px solid #000;
+    
+
+    
+}
+.titlebar{
+    position: relative;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 220, 220);
+    opacity: 0.7;
+  }
+.offersection{
+    
+    width: 340px;
+    height: 840px;
+    background-color:rgb(247, 231, 203);
+    opacity: 1;
+  
+    
+}
+.offersection h2{
+    position: relative;
+    top: 7%;
+    left:8%;
+    color: rgb(85, 83, 83);
+
+}
+.title:hover{
+    color: rgb(255, 0, 106);
+
+}
+.offersection h2:hover{
+    transform: scale(1.1);
+}
+.menu1{
+    color: whitesmoke;
+    background: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 336px;
+    height: 540px;
+    background-color: #1e1e20;
+ 
+    border: 5px solid wheat;
+  
+}
+.menu2{
+    color: whitesmoke;
+   
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 336px;
+    height: 540px;
+    background-color: #1e1e20;
+
+    border: 5px solid wheat;
+  
+}
+
+.menu3{
+    color: whitesmoke;
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    width: 336px;
+    height: 540px;
+    background-color: #1e1e20;
+ 
+    border: 5px solid wheat;
+  
+}
+.menu1:hover,.menu2:hover,.menu3:hover{
+    transform: scale(1.02);
+    transition: 0.4s ease;
+
+    box-shadow: 0px 4px 8px 8px black;
+}
+
+.title{
+    top: 7%;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0,1);
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+
+}
+.title1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 0, 191);
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+}
+.title2{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(17, 206, 143);
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+}
+.title3{
+    font-size: 50px;
+    font-weight: bold;
+    color: #008cff;
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+}
+li{
+    
+    font-size: 23px;
+}
+

@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cousine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap');
+body{
+    background-color: #303036;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+section{
+    width: 100%;
+    height: 110vh;
+}
+section.sec1{
+    background-image: url(../home1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+
+
+.scrolldown{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  /*background: #fff;*/
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+
+
+}
+.scrolldown span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  border-right: 5px solid rgb(0, 0, 0);
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+
+
+}
+.scrolldown span:nth-child(1){
+  transform: translate(-15px,-15px);
+  animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2){
+  transform: translate(0,0);
+  animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3){
+  transform: translate(15px,15px);
+  animation-delay: 0s;
+}
+@keyframes animate{
+  
+  0%{
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+
+  }
+  25%{
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+
+  }
+  50%, 100%{
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+
+  }
+}
+ 
+
+
+
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0%;
+
+}
+nav ul{
+    display: flex;
+    margin: 0;
+    float: right;
+    padding: 0 20px;
+
+}
+nav ul li{
+    list-style: none;
+
+}
+nav ul li a{
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 39px;
+
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background: rgb(255, 255, 255);
+    color: #000;
+    border: 1px solid #000;
+    
+
+    
+}
+
+.sec1 h1{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+ 
+   
+    font-size: 85px;
+    text-align: center;
+   
+    color: rgb(0, 0, 0);
+    transform: translate(-50%,-50%);
+  
+}
+.sec1 h1:hover{
+  color: rgb(255, 0, 140);
+}
+
+.button{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.btn{
+    font-family: 'cousine', sans-serif;
+    font-size: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.btn:hover{
+   /* background-color: #fff;
+    color: #000;*/
+    color: #fff;
+    background: #333;
+ 
+    transition-delay: 0.1s;
+}
+.sec1text{
+    text-shadow: none;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: rgb(224, 195, 195);
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+.banner{
+  background: rgb(224, 195, 195);
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner video{
+  background: linear linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  position: absolute;
+  top: 310vh;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.banner .contenttt{
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+.banner .contenttt .wrap{
+  position: absolute;
+  width: 600px;
+  top: 400%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.8;
+}
+.banner .contenttt .wrap .feedback{
+  width: 100%;
+  position: relative;
+}
+.banner .contenttt .wrap .feedback .feedbackus{
+  float: left;
+  width: 100%;
+  border: 3px solid #fd2d73;
+  padding: 11px;
+  font-size: 17px;
+  outline: none;
+
+}
+.banner .contenttt .wrap .feedback .feedbackbtn{
+  position: absolute;
+  width: 100px;
+  height: 48px;
+  border: 1px solid #fd2d73;
+  background-color: #fd2d73;
+  text-align: center;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 20px;
+}
+.banner .contenttt .wrap .feedback .feedbackbtn:hover{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),#fd2d73;
+}
+
+
+
+
+
+
+
+
+
+.sec2{
+    background-color: rgb(243, 241, 231);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.sec2title{
+    color: rgb(255, 255, 255);
+    font-size: 140px;
+    font-weight: normal;
+    position: relative;
+    text-align: center;
+    top: 5%;
+    text-shadow: 0px 10px 30px rgb(0, 0, 0);
+    
+
+}
+.sec2title:hover{
+  color: rgb(255, 0, 128);
+  text-shadow: none;
+}
+
+.titlebar{
+  width: 100%;
+  height: 250px;
+  background: rgb(255, 220, 220);
+  opacity: 0.7;
+}
+
+
+
+
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+
+    
+    
+    position:  absolute;
+    width: 340px;
+    height: 250px;
+    background: none;
+    top: 150vh;
+    left: 1%;
+   
+    
+  
+  }
+  .maincontainer1{
+
+    
+    
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    background: none;
+    top: 150vh;
+    left: 26%;
+    
+  }
+  .maincontainer2{
+
+    
+    
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    background: none;
+    top: 150vh;
+    left: 51%;
+    
+  
+  }
+  
+  .maincontainer4{
+
+    
+    
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    background: none;
+    top: 150vh;
+    left: 76%;
+   
+  
+  }
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard:hover{
+    transform: rotateY(180deg);
+
+  }
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+   .thefront{
+       background-size: cover;
+       background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+  }
+ 
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border: 5px solid black;
+    
+    background: rgb(219, 219, 148);
+    color: #333;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  
+
+
+
+  .footer{
+    background: rgb(243, 241, 231);
+    background-size: cover;
+    background-position: center;
+
+      
+  }
+
+  .sec3title{
+     
+      
+    color: rgb(255, 255, 255);
+    font-size: 140px;
+    font-weight: normal;
+    position: relative;
+    text-align: center;
+    top: 5%;
+    text-shadow: 0px 10px 30px rgb(0, 0, 0)
+  }
+  .sec3title:hover{
+    color: rgb(255, 0, 128);
+    text-shadow: none;
+  }
+
+  
+  .service1{
+
+    
+    
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 270vh;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .service2{
+
+    
+    
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 270vh;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .service3{
+
+    
+    
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 270vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  .service4{
+
+    
+    
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 270vh;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .service5{
+
+    
+    
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 270vh;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  
+  }
+  
+  
+  /* THE CARD HOLDS THE FRONT AND BACK FACES */
+  .thecard1{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* border-radius: 10px;
+    transform-style: preserve-3d;*/
+    transition: all 0.8s ease;
+    border: 6px solid black;
+  }
+  
+  /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+  .thecard1:hover{
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  }
+ 
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .cardcontent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  
+    background: #fff;
+    color: #333;
+    text-align: center;
+    
+  }
+  
+  
+  /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+  .cardcontent h1{
+    font-family: 'Grand Hotel', cursive;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  
+  
+
+
+
+
+
+
+  .btun{
+    padding: 0.5rem 1rem;
+    background: #303067;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+  .btunbig{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+  }
+  .btun:hover{
+    color: white !important;
+    background: #005255;
+  }
+  .textinput{
+    padding: .7rem 1rem;
+    display: block;
+    width: 80%;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    color: #444;
+    line-height: 1rem;
+    font-size: 1.2em;
+
+  }
+
+  .footerr{
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px ;
+    position: relative;
+  }
+
+ 
+  .footerr .footercontent{
+    border: 1px solid gray;
+    height: 350px;
+    display: flex;
+    
+  }
+  .footerr .footercontent .footersection{
+    flex: 1;
+    padding: 25px;
+    
+  }
+ 
+
+.footerr .footercontent h1,.footerr .footercontent h2{
+  color: white;
+
+}
+.footerr .footercontent .about h1 span{
+  color: rgb(234, 0, 255);
+}
+.footerr .footercontent .about .contactt span{
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  
+}
+
+
+.footerr .footercontent .about .socialize a{
+  
+  
+
+  position: relative;
+  left: -12%;
+  color: gray;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.2em;
+  border-radius: 5px;
+
+}
+.footerr .footercontent .about .socialize a:hover{
+  
+  color: white;
+  transition: all 0.3s ease;
+}
+.footerr .footercontent .links ul a{
+  display:block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: gray;
+
+
+}
+.footerr .footercontent .links ul a:hover{
+  color: white;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+.footerr .footercontent .contactform .contactinput{
+  background: #272727;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  padding: 0.9rem 1.4rem;
+  border: none;
+
+
+}
+.footerr .footercontent .contactform .contactinput:focus{
+  background: #1a1a1a;
+}
+.footerr .footerbottom{
+  background: #343a40;
+  color: #686868;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
